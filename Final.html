@@ -1,0 +1,133 @@
+<!-- Indicates the language of the content of the page, here in english -->
+<html lang="en">
+<!-- the html <head> element contains all the header information: page title information, the type of characters used on the page, google web fonts link -->
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<title>Wild Circus</title>
+	<link rel="stylesheet" href="Final.css" />
+</head>
+<!-- The html element <body> the body of the page contains all the contents of the page -->
+
+<body>
+	<!-- The html <div> element is a generic container. I will use it to group other elements to apply a style to them, using the  attribute "class"  -->
+	<div class="container">
+		<!-- The HTML <header> element represents a group of introductory content or content that helps navigate. It contains a title element, but also other items such as the menu. -->
+		<header>
+			<!-- Main Title -->
+			<h1>Wild Circus</h1>
+			<!-- "<nav>" is a section for navigation in the document: a navigation menu. -->
+			<nav>
+				<!-- Bullets list "<ul>" with 4 bullets "<li>" and 4 links "<a href=" which lead us to the corresponding sections, within <a> "and </a>" we find the words that will serve as links -->
+				<ul>
+					<li><a href="#performance">Performances</a></li>
+					<li><a href="#about_us">About Us</a></li>
+					<li><a href="#price">Prices</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- The HTML <section> element represents a generic section of a document, for example a thematic content group. A section usually begins with a title.  -->
+		<section id="performance">
+			<!-- The <h2> elements represent the second level of titles in a document, <h1> is the most important and <h6> is the least important. -->
+			<h2>Performances</h2>
+			<div class="performances">
+				<ul>
+					<li>
+						<!--The HTML <img> element is used to represent an image in a document.
+						The src attributes specify the location (URL) of the external resources."Alt" attributes are essential for visually impaired people or when browsers can not display the image referenced by the element. In these cases, the browser can replace the image with the text used for the "alt" attribute of the img element. -->
+						<img src="https://wildcodeschool.fr/images/clown.png" alt="clown picture">
+						<h3>Laugh</h3>
+						<p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+					</li>
+					<li>
+						<img src="https://wildcodeschool.fr/images/magic_hat.png" alt="magic hat picture">
+						<h3>Dream</h3>
+						<p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+					</li>
+					<li>
+						<img src="https://wildcodeschool.fr/images/lion.png" alt="lion picture">
+						<h3>Marvel at</h3>
+						<p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<hr />
+
+		<section id="about_us">
+			<h2>About Us</h2>
+			<!-- the html element <p> represents a paragraph of text -->
+			<p><strong>Since 2003:</strong>A driving force in the circus art reinvention movement, Wild Circus has been creating award-winning entertainment content for nearly 14 years and ranks among the world’s leading contemporary circuses.Wild Circus has taken part in numerous prestigious international festivals and has seduced both New York’s Broadway and London’s West End. Its productions are crafted for a wide range of audiences and have been embraced by over fifty cultures. In the last 14 years,Wild Circus’s twelve productions have proudly boasted more than 1,500 performances in over 140 cities and have been seen by over 1,3 million spectators.Ninth and eleventh touring shows under the Wild Circus banner. In addition to its touring shows, more than 747 designed events have taken place worldwide.<br />
+				<img src="https://img11.hostingpics.net/thumbs/mini_544902croppedchapiteau.png" alt="Chapiteau" /><br/><strong>International Headquarters:</strong>Wild Circus International Headquarters, located in Lyon, is a laboratory of creativity, where the world’s best creative minds, craftspeople, experts in various domains, and artists can collaborate on creative projects. By assuming the roles of catalyst and unifier,Wild Circus is able to reinvent itself with each new chapter of its history.
+			</p>
+		</section>
+
+		<hr />
+
+		<section id="price">
+			<h2>Prices</h2>
+			<!--The HTML <table> element is used to represent an array of data, that is, information expressed on a two-dimensional array.The HTML <th> element defines a cell in an array as a header cell that indicates the beginning and end of the contents of a cell for a cell group.<tr> </tr>, indicates the beginning and end of a row in the table.<td> </td>, defines a cell of a table that contains data -->
+			<table>
+				<tr>
+					<th>Days</th>
+					<th>Adults</th>
+					<th>Children under 12 years</th>
+					<th>Groups (more than 10 people)</th>
+					<th>Schools</th>
+				</tr>
+				<tr>
+					<td><strong>Weeks except Wednesday</strong></td>
+					<td>35€</td>
+					<td>5€</td>
+					<td>15€</td>
+					<td>10€</td>
+				</tr>
+				<tr>
+					<td><strong>Week-end and Wednesday</strong></td>
+					<td>40€</td>
+					<td>5€</td>
+					<td>20€</td>
+					<td>10€</td>
+				</tr>
+
+			</table>
+		</section>
+
+		<hr />
+
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<!-- <form> </form> it is the main tag of the form, which allows to indicate the beginning and the end.
+     The "method" attribute indicates the means by which the data will be sent, here the value is "post" it is the most used value for the forms because it allows to send a large amount of information.
+     the "action" attribute gives the address of the page that will process the information.
+      -->
+			<form method="post" action="traitement.php">
+				<!-- we must put block <p> tags inside the form in order to include text. The <label> tag indicates the label of the text box.The "for" attribute is used to link the label to the form field. The <input> tag whose type attribute is "email" allows the user to enter or modify an email address that is the value of the element.  -->
+				<p> <label for="email">Email</label> <input type="email" id="email"> </p>
+				<!-- the <textarea> tag is a multi-line text box. we have modified the size of the <textarea> with the "rows" attributes which indicates the number of lines of text that can be displayed simultaneously and "cols" the number of columns -->
+				<p> <label for="message">Message</label> <textarea rows="8" cols="50" id="message"></textarea> </p>
+				<!-- Creation of the send button, the visitor will be led to the page indicated in the <action> attribute of the form -->
+				<div class="submit"> <input type="submit" value="Send your message"></div>
+			</form>
+
+		</section>
+
+		<footer>
+			<p>Wild Circus by Chena, <a href="https://wildcodeschool.fr" title="The Best Developer School:)" target="_blank"> Wild Code School</a> - 12 october 2017</p>
+			<p>Certification Openclassrooms<a href="https://openclassrooms.com/course-certificates/7024315618" target="_blank">"Comprendre le Web"</a></p>
+			<p>Certification Openclassrooms <a href="https://openclassrooms.com/course-certificates/6141234640" target="_blank">"Apprenez à créer votre site web avec HTML5 et CSS3"</a></p>
+			<p>My profile Codecademy<a href="https://www.codecademy.com/Kr4v3n69" target="_blank"> View my profile </a></p>
+			<p>Me ID france.ioi <a href="http://www.france-ioi.org/user/perso.php?sLogin=kr4v3n&bShow=Afficher" target=_blank>"kr4v3n"</a></p><br/>
+			<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS Valide !"/></a>
+			</p>
+		</footer>
+	</div>
+</body>
+
+</html>
